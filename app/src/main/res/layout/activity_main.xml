@@ -1,0 +1,25 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btnAll" android:text="All" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+        <Button android:id="@+id/btnClothing" android:text="Clothing" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+        <Button android:id="@+id/btnElectronics" android:text="Electronics" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+        <Button android:id="@+id/btnHome" android:text="Home" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
